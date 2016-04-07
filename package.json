@@ -5,9 +5,9 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twitsprout/instagallery"
+    "url": "https://github.com/echooocc/instagallery"
   },
-  "author": "CrowdRiff",
+  "author": "Echo Yu",
   "license": "None",
   "private": true,
   "dependencies": {
