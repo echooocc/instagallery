@@ -11,10 +11,6 @@ The objective is to accept a hashtag, hit the Instagram API and display 10 photo
 3. The app makes a call to `http://localhost:3000/hashtag/:hashtag` and retrieves JSON.  
 4. The JSON is rendered as a gallery.   
 
-#### App Layout
-
-<img src="http://i.imgur.com/cYerj13.jpg" width="200px">
-
 ### Notes
 
 * The frontend should be a single page app built using React or Angular.  
