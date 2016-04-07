@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {InstasComponent} from './instas.component';
+import {InstaService} from './insta.service';
 
 @Component({
     selector: 'insta-app',
