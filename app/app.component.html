@@ -3,9 +3,5 @@
     <h1>{{title}}</h1>
     <input type="text" name="hashtag" placeholder="input a hashtag" [(ngModel)]="hashtag">
     <button class="button" (click)="search()">Search</button>
-    <ul class="images">
-        <li class="image-list">
-            <div class="image-wrapper"><a href="{{hashtag.link}}" class="image-link"><img class="image"><span class="likes">&#10084; {{hashtag.likes.count}}</span></a></div>
-        </li>
-     </ul>
+    <router-outlet></router-outlet>
  </div>
