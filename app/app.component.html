@@ -2,6 +2,16 @@
     <div class="container">
     <h1>{{title}}</h1>
     <input type="text" name="hashtag" placeholder="input a hashtag" [(ngModel)]="hashtag">
-    <button class="button" (click)="search()">Search</button>
-    <router-outlet></router-outlet>
+    <button class="button" (click)="search(hashtag)">Search</button>
+    <h1>Hashtagss Images</h1>
+    {{instas}}
+    <div *ngIf="instas">
+    <div *ngFor="#insta of instas">
+        <h1>hihi</h1>
+        <h4>{{insta}}</h4>
+    </div>
+    </div>
+    <footer>
+      <p>design&nbsp;<a href="http://echoyu.com">&#10084;&nbsp;</a>with Echo</p>
+    </footer>
  </div>
