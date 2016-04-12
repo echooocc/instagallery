@@ -2,7 +2,10 @@
   "name": "instagallery",
   "version": "0.1.0",
   "description": "Frontend Dev Challenge",
-  "main": "server.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/echooocc/instagallery"
