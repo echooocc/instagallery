@@ -6,9 +6,9 @@ import 'rxjs/add/operator/map'; //add this to avoid "this._http.get(...).map is 
 @Injectable()
 export class InstaService{
     constructor(private _http: Http) { }
+    public API_BASE_URL = window.location.href+'hashtag/';
     getInstas(tag: string) { 
-       return this._http.get('http://localhost:3000/hashtag/'+tag)
+       return this._http.get(this.API_BASE_URL+tag)
         .map(res => res.json().data);
     }
 }
-
