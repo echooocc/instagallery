@@ -3,15 +3,14 @@
     <h1>{{title}}</h1>
     <input type="text" name="hashtag" placeholder="input a hashtag" [(ngModel)]="hashtag">
     <button class="button" (click)="search(hashtag)">Search</button>
-    <h1>Hashtagss Images</h1>
-    {{instas}}
-    <div *ngIf="instas">
-    <div *ngFor="#insta of instas">
-        <h1>hihi</h1>
-        <h4>{{insta}}</h4>
-    </div>
-    </div>
-    <footer>
-      <p>design&nbsp;<a href="http://echoyu.com">&#10084;&nbsp;</a>with Echo</p>
-    </footer>
+
+    <ul class="images">
+        <li *ngFor="#insta of instas" class="image-list">
+          <div class="image-wrapper"><a href="{{insta.link}}" class="image-link"><img src="{{insta.images.low_resolution.url}}" class="image"><span class="likes">&#10084; {{insta.likes.count}}</span></a></div>
+        </li>
+    </ul>
  </div>
+ <footer class="wrapper">
+    <p>design&nbsp;<a href="http://echoyu.com">&#10084;&nbsp;</a>with Echo</p>
+ </footer>
+
