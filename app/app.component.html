@@ -3,7 +3,7 @@
     <h1>{{title}}</h1>
     <input type="text" name="hashtag" placeholder="input a hashtag" [(ngModel)]="hashtag">
     <button class="button" (click)="search(hashtag)">Search</button>
-
+    <div *ngIf="serviceError" class="wrapper">Oops! Our service is taking a break :( </div>
     <ul class="images">
         <li *ngFor="#insta of instas" class="image-list">
           <div class="image-wrapper"><a href="{{insta.link}}" class="image-link"><img src="{{insta.images.low_resolution.url}}" class="image"><span class="likes">&#10084; {{insta.likes.count}}</span></a></div>

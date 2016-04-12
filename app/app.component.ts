@@ -13,12 +13,13 @@ import {InstaService} from './insta.service';
 export class AppComponent{  
     title = 'Insta gallery';  
     constructor(private _instaService: InstaService) { }
-    public instas:any;
+    public instas: any;
+    public serviceError: boolean = false;
     search(tag: string) {
         this._instaService.getInstas(tag)
             .subscribe(
                     res => {this.instas = res},
-                    err => console.error(err),
+                    err => {this.serviceError = true},
                     () => console.log('success! '+this.instas)
             );
         console.log(this.instas);
