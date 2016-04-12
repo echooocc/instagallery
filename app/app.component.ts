@@ -15,7 +15,8 @@ import { Insta } from './insta';
 export class AppComponent{  
     title = 'Insta gallery';  
     constructor(private _instaService: InstaService) { }
-    search(tag: string) {
-        this._instaService.search(tag);
+    instas: Insta[];
+    search(tag: string) { 
+       return this.instas = this._instaService.getInstas(tag);
     }
 }
