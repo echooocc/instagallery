@@ -23,7 +23,7 @@ The objective is to accept a hashtag, hit the Instagram API and display 10 photo
 Make sure you have `node` and `npm` installed.  
   
 ```
-make prep
+make install
 make
 ```
 

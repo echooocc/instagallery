@@ -8,27 +8,20 @@
     "url": "https://github.com/echooocc/instagallery"
   },
   "author": "Echo Yu",
-  "scripts": {
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" "
-  },
   "license": "None",
   "private": true,
   "dependencies": {
     "angular2": "^2.0.0-beta.13",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "^0.1.2",
+    "request": "^2.70.0",
     "rxjs": "^5.0.0-beta.2",
     "systemjs": "^0.19.25",
     "zone.js": "^0.6.9"
   },
   "devDependencies": {
     "commonjs": "0.0.1",
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.2.0",
-    "ts-loader": "^0.8.1",
+    "express": "^4.13.4",
     "typescript": "^1.8.9",
     "typings": "^0.7.12"
   }

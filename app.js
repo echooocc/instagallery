@@ -4,7 +4,7 @@ var debug = require('debug')('app');
 
 var app = express();
 
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 app.get('/hashtag/:hashtag', function(req, res) {
   // Instagram api

@@ -11,9 +11,7 @@
     // "outFile": "build/js/main.js"
   },
   "exclude": [
-    "node_modules",
-    "typings/main",
-    "typings/main.d.ts"
+    "node_modules"
   ],
   "formatCodeOptions": {
     "indentSize": 2,
