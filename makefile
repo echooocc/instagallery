@@ -6,7 +6,7 @@ install:
 	npm install
 
 run:
-	node app.js
+	node server/app.js
 
 dev:
 	tsc -w

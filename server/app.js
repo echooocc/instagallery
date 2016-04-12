@@ -5,7 +5,8 @@ var debug = require('debug')('app');
 var app = express();
 
 app.set('port', (process.env.PORT || 3000));
-app.use(express.static('.'));
+app.use(express.static('./app'));
+app.use(express.static('./node_modules/'));
 
 app.get('/hashtag/:hashtag', function(req, res) {
   // Instagram api
