@@ -4,7 +4,10 @@ var debug = require('debug')('app');
 
 var app = express();
 
-app.use(express.static('public'));
+app.set('port', (process.env.PORT || 3000));
+app.use(express.static('.'));
+app.use(express.static('./app'));
+app.use(express.static('./node_modules/'));
 
 app.get('/hashtag/:hashtag', function(req, res) {
   // Instagram api
@@ -25,8 +28,6 @@ app.get('/hashtag/:hashtag', function(req, res) {
    });
 });
 
-var server = app.listen(3000, function () {
-  // var host = server.address();
-  var port = server.address().port;
-  console.log('Instagallery server listening on http://localhost:'+port);
+var server = app.listen(app.get('port'), function () {
+  console.log('Instagallery server listening on port '+ app.get('port'));
 });

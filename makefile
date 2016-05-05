@@ -2,28 +2,14 @@
 
 all: run
 
-prep: npm bower build
-
-npm:
+install:
 	npm install
 
-bower:
-	bower install
-
 run:
-	node app.js
-
-build:
-	gulp build
-
-karma:
-	gulp karma
-
-mocha:
-	DEBUG=mocha mocha test/app_spec.js
+	node server/app.js
 
 dev:
-	gulp
+	tsc -w
 
 debug: build debug-app
 
